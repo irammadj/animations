@@ -87,3 +87,138 @@ body {
     transform: translate(-50%, -50%) translateY(-30px);
   }
 }
+
+.box1 {
+  background-color: var(--green);
+  border-radius: 12px;
+  width: 90px;
+  height: 90px;
+}
+
+.box2 {
+  background-color: var(--coral);
+  border-radius: 12px;
+  width: 90px;
+  height: 90px;
+  animation-delay: 0.2s;
+}
+
+.box3 {
+  background-color: var(--purple);
+  border-radius: 12px;
+  width: 90px;
+  height: 90px;
+  animation-delay: 0.4s;
+}
+
+.spinner {
+  position: relative;
+  margin: 50px;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius: 12px;
+  min-width: 500px;
+  height: 250px;
+  background-color: rgb(54, 54, 54);
+}
+
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-box {
+  display: flex;
+  gap: 50px;
+  position: absolute;
+  top: 50%;
+  left: 33%;
+}
+
+.fade {
+  position: relative;
+  margin: 50px;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius: 12px;
+  min-width: 500px;
+  height: 250px;
+  background-color: rgb(54, 54, 54);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.word {
+  font-size: 24px;
+  font-weight: 600;
+  animation: slide-in 0.7s ease-in-out forwards;
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.world {
+  animation-delay: 0.2s;
+}
+
+.mark {
+  animation-delay: 0.4s;
+}
+
+.hava {
+  margin: 50px;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius: 12px;
+  min-width: 500px;
+  height: 250px;
+  background-color: rgb(54, 54, 54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hava-btn {
+  background-color: var(--blue);
+  padding: 1rem 2rem;
+  border: none;
+  color: white;
+  font-size: large;
+  border-radius: 12px;
+}
+
+.hava-btn:hover {
+  animation: pulse 0.7s ease-in-out;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
